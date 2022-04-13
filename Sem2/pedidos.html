@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos Zyan Bakery</title>
+</head>
+
+<body>
+    <header>
+        <li><a href="./index.html">
+            <img src="./imagenes/Logo zyan.png" alt="Logo de la empresa"></a></li>
+            <p>slogan</p>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pasteles.html">Pasteles</a></li>
+                <li><a href="./pedidos.html">Pedidos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./quienes_somos.html">Quienes somos</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    <main>
+        <article>
+            <h1>Pedidos</h1>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido">
+                <br>
+                <label for="telefono">Telefono:</label>
+                <input type="text" name="telefono" id="telefono" minlength="10" maxlength="10"> o
+                <input type="tel" name="telefono" id="telefono" minlength="10" maxlength="10">
+                <br>
+                <label for="email">Correo eléctronico:</label>
+                <input type="email" name="email" id="email">
+                <br>
+                <h3>Dirección</h3>
+                <label for="Calle_o_avenida">Calle o avenida</label>
+                <input type="text" name="Calle_o_avenida" id="Calle_o_avenida">
+                <label for="num_ext">Número exterior:</label>
+                <input type="text" name="num_ext" id="num_ext">
+                <label for="num_int">Número interior:</label>
+                <input type="text" name="num_int" id="num_int">
+                <label for="alcaldia">Alcaldia:</label>
+                <input type="text" name="alcaldia" id="alcaldia">
+                <label for="c.p">C.P:</label>
+                <input type="text" name="c.p" |id="c.p">|
+                <br>
+                <label for="fecha">Fecha:</label>
+                <input type="date" name="fecha" id="fecha">
+                <br>
+                <label for="hora">Hora:</label>
+                <input type="time" name="hora" id="hora">
+                <br>
+                <label for="descripcion_pastel">Descripcion extra del pastel</label>
+                <br>
+                <textarea name="" id="descripcion_pastel" cols="30" rows="10"></textarea>
+
+                <h3>¿Qué deseas pedir?</h3>
+                <label for="pastel">Pastel</label>
+                <input type="radio" name="pedir" id="pastel">
+                <br>
+                <label for="cheesecake">Cheesecake</label>
+                <input type="radio" name="pedir" |id="cheesecake">
+                <br>
+                <label for="brownie">Brownie</label>
+                <input type="radio" name="pedir" | id="brownie" |>
+                <br>
+                <label for="galletas">Galletas</label>
+                <input type="radio" name="pedir" id="galletas">
+                <br>
+                <label for="gelatina">Gelatina</label>
+                <input type="radio" name="pedir" id="gelatina">
+
+                <!-- Sabor -->
+                <h3>Sabor (Solo aplica pastel)</h3>
+                <label for="sabor_chocolate">Chocolate</label>
+                <input type="radio" name="sabor" id="sabor_chocolate">
+                <br>
+                <label for="sabor_vainilla">Vainilla</label>
+                <input type="radio" name="sabor" id="sabor_vainilla">
+                <br>
+                <label for="sabor_café">Café</label>
+                <input type="radio" name="sabor" id="sabor_café">
+                <br>
+                <label for="sabor_nuez|">Nuez</label>
+                <input type="radio" name="sabor" id="sabor_nuez">
+                <br>
+                <label for="sabor_naranja">Naranja</label>
+                <input type="radio" name="sabor" id="sabor_naranja">
+                <br>
+                <label for="sabor_limón">Limón</label>
+                <input type="radio" name="sabor" id="sabor_limón">
+                <br>
+
+                <!-- Relleno -->
+                <h3>Relleno (Solo aplica pastel)</h3>
+                <label for="fresas">Fresas</label>
+                <input type="radio" name="relleno" id="fresas">
+                <br>
+                <label for="durazno_almibar">Durazno en almibar</label>
+                <input type="radio" name="relleno" id="durazno_almibar">
+                <br>
+                <label for="cerezas">Cerezas</label>
+                <input type="radio" name="relleno" id="cerezas">
+                <br>
+
+                <!-- Cobertura -->
+                <h3>Cobertura (Solo aplica pastel)</h3>
+                <label for="crema_batida">Crema batida</label>
+                <input type="radio" name="cobertura" id="crema_batida">
+                <br>
+                <label for="chantilly">Chantilly</label>
+                <input type="radio" name="cobertura" id="chantilly">
+                <br>
+                <label for="betun_limon">Betún de limón</label>
+                <input type="radio" name="cobertura" id="betun_limon">
+                <br>
+                <label for="crema_batida_cafe">Crema batida de café</label>
+                <input type="radio" name="cobertura" id="crema_batida_cafe">
+                <br>
+
+                <!-- Tipo de cobertura -->
+                <h3>¿En dónde deseas la cobertura? (Solo aplica pastel)</h3>
+                <label for="completa">Completa</label>
+                <input type="radio" name="tip_cob" id="completa">
+                <br>
+                <label for="solo_arriba">Solo arriba</label>
+                <input type="radio" name="tip_cob" id="solo_arriba">
+                <br>
+
+                <!-- Decoraciones -->
+                <h3>Decoración (Max 2)</h3>
+
+                <label for="fresas1">Fresas</label>
+                <input type="checkbox" name="fresas1" id="fresas1">
+                <br>
+                <label for="chocolate1">Chocolate</label>
+                <input type="checkbox" name="chocolate1" id="chocolate1">
+                <br>
+                <label for="flores_comestibles">Flores comestibles</label>
+                <input type="checkbox" name="completa" id="completa">
+                <br>
+                <label for="cerezas1">Cerezas</label>
+                <input type="checkbox" name="cerezas1" id="cerezas1">
+                <br>
+                <label for="limon">Limón</label>
+                <input type="checkbox" name="limon" id="limon">
+                <br>
+                <label for="crema_batida1">Crema batida</label>
+                <input type="checkbox" name="crema_batida1" id="crema_batida1">
+                <br>
+                <label for="frutos_rojos">Frutos rojos</label>
+                <input type="checkbox" name="frutos_rojos" id="frutos_rojos">
+                <br>
+                <label for="dulce_leche">Dulce de leche</label>
+                <input type="checkbox" name="dulce_leche" id="dulce_leche">
+                <br>
+                <!-- Entrgea -->
+                <h3>Entrega</h3>
+                <label for="entrega">Entrega en:</label>
+                <select name="entrega" id|="entrega">
+                    <option value="sucursal">Sucursal</option>
+                    <option value="domicilio">Domicilio</option>
+                </select>
+
+
+
+            </form>
+
+        </article>
+
+    </main>
+    <footer>
+        <ul>
+            <li><a href="./facturacion">Facturación</a></li>
+            <li><a href="./bolsa_de_trabajo">Bolsa de trabajo</a></li>
+            <li><a href="https://www.instagram.com/zyan.bakery/" target="_blank"><img
+                        src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" alt=""></a></li>
+            <li><a href="https://www.facebook.com/ZYANBAKERY" target="_blank"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                        alt=""></a></li>
+            <li><a href="https://www.tiktok.com/@zyanbakery?lang=es" target="_blank"><img
+                        src="http://assets.stickpng.com/thumbs/5cb78671a7c7755bf004c14b.png" alt=""></a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
